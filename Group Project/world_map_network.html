@@ -269,7 +269,7 @@
                         .attr("top", (mouseData.clientY + 10).toString() + "px")
                         .html(
                             "<div class='tooltipData'>Country: " + trade_details.get(iso_a3).name + "</div>" +
-                            "<div class='tooltipData'>Trade amount (in million US Dollars): " + trade_details.get(iso_a3).trade_value + "</div>" +
+                            "<div class='tooltipData'>Trade amount (in million US Dollars): " + d3.format(".2s")(trade_details.get(iso_a3).trade_value) + "</div>" +
                             "<div class='tooltipData'></div>")
 
 
